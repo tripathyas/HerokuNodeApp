@@ -1,0 +1,75 @@
+<html>
+
+<style>
+    th {
+        color: red;
+    }
+    
+    td {
+        padding: 10px;
+    }
+    
+    .evenClass {
+        background: blue
+    }
+</style>
+
+<head>
+    <title>Node prog</title>
+</head>
+
+<body>
+    <form method="POST">
+        <h1>Header 1</h1>
+        </br>
+        </br>
+        <table>
+            <thead>
+                <th> Header </th>
+                <th> Description </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Your name</td>
+                    <td>
+                        <input type="text" required="required" name="name" /> </td>
+                </tr>
+                <tr>
+                    <td>Your mark</td>
+                    <td>
+                        <input type="number" required="required" name="mark" /> </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input name="color" type="color">
+                    </td>
+                    <td>
+                        <select required="required" name="priority">
+                            <option disabled="disabled" selected></option>
+                            <option  disabled="disabled">Super priority</option>
+                            <optgroup>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                            </optgroup>
+                            </br>
+                            <option value="Select" disabled="disabled">sub priority</option>
+                            <optgroup>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Submit</td>
+                    <td>
+                        <input type="submit" value="Submit" /> </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+
+</html>
