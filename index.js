@@ -3,6 +3,8 @@ var bodyParser = require('body-parser');
 var qs = require('querystring');
 
 var util = require('util');
+var port = process.env.PORT || 3030;
+
 app.set('views', __dirname + '/server/views');
 app.set('view engine', 'jade');
 app.use(bodyParser.json());       // to support JSON-encoded bodies
@@ -43,4 +45,4 @@ app.post('/*', function(req, res) {
     // return res;
 })
 
-app.listen(3030);
+app.listen(port);
